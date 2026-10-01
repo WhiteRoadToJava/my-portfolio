@@ -1,18 +1,23 @@
-const hamb = document.querySelector('.header .nev-bar .nav-list .hamb'); 
-const mobile_menu = document.querySelector('.header .nev-bar .nav-list ul'); 
-const header = document.querySelector('header .container');
-
-hunb,addEventListener('click', () => {
-    humb.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
-});
+const hamb = document.querySelector('#header .nav-bar .nav-list .hamb');
+const mobileMenu = document.querySelector('#header .nav-bar .nav-list ul');
+const header = document.querySelector('#header .header');
 
 
-document.addEventListener('scroll', () =>{
-    var scroll_position = window.scrollY;
-    if(scroll_position>250){
-        header.stylw.backgroundcolor = '#29323c'
-    }else{
-        header.stylw.backgroundcolor = 'transparent'
-    }
-});
+if(hamb && mobileMenu ){
+    hamb.addEventListener('click', () => {
+        hamb.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+}
+
+mobileMenu.querySelectorAll("a").forEach(link =>
+    link.addEventListener("click", () => {
+        hamb.classList.remove("active");
+        mobileMenu.classList.remove("active");
+    })
+);
+
+document.addEventListener("scroll", () => {
+    if(!header) return ;
+    header.computedStyleMap.backgroundColor = window.scrollY > 250 ? "#29323c" : "transparent";
+})
