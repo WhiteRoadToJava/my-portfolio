@@ -29,11 +29,8 @@ a {
 }
 
 #one .one {
-    /* Corrected: Typo in max-width */
     max-width: 1200px; 
-    /* Corrected: Removed invalid property and value */
     margin: 0 auto;
-    /* Corrected: Changed comma to space */
     padding: 0 50px;
     justify-content: flex-start;
 }
@@ -93,7 +90,6 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-top: 30px;
-    /* Corrected: Typo in 'background-color' */
     transition-property: background-color, color;
 }
 
