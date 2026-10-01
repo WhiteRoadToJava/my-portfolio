@@ -31,7 +31,6 @@
 
 #footer .social-icon {
     display: flex;
-    /* Corrected: Changed 30pc to 30px */
     margin-bottom: 30px;
 }
 
@@ -57,7 +56,6 @@
 @media only screen and (min-width: 768px) {
     .cta {
         font-size: 2.5rem;
-        /* Corrected: Changed comma to space */
         padding: 20px 60px;
     }
 
@@ -74,15 +72,14 @@
         margin: 2.5%;
     }
 
-    /*
-    #project .project-item{
+    #projects .project-item{
         flex-direction: row;
     }
-    
+
     #projects .project-item:nth-child(even){
         flex-direction: row-reverse;
     }
-    
+
     #projects .project-item{
         height: 400px;
         margin: 0;
@@ -95,7 +92,7 @@
     #projects .all-projects .project-img{
         height: 100%;
     }
-    */
+
     #about .about {
         flex-direction: row;
     }
@@ -108,7 +105,6 @@
 
     #about .about .col-left .about-img::after {
         left: -34px;
-        /* Corrected: Removed invalid character 'ö' */
         top: 34px;
         height: 98%;
         width: 98%;
@@ -156,12 +152,10 @@
             background: transparent;
         }
 
-        /* Corrected: Changed 'il' to 'li' */
         #header .nav-list ul li {
             display: inline-block;
         }
 
-        /* Corrected: Changed 'Header' to 'header' */
         #header .nav-list ul li a {
             font-size: 1.8rem;
         }
