@@ -76,4 +76,31 @@ border-radius: 10px;
 }
 
 
+#projects .tech-tags{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    margin: 15px 0;
+}
+
+#projects .tech-tags li{
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+#projects .badge{
+    font-size: 1.3rem;
+    vertical-align: middle;
+    padding: 3px 8px;
+    background: #f9a500;
+    color: #000;
+    border-radius: 4px;
+}
+
+#upcoming-list .project-item{
+    opacity: .75;
+}
+
 
