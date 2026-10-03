@@ -66,9 +66,10 @@ function projectCard(p){
         ${tags ? `<ul class="tech-tags">${tags}</ul>` : ""}
         <div class="project-links">${links}</div>
       </div>
-      <div class="project-img">
+      ${p.image ?
+      `<div class="project-img">
         <img src="${p.image}" alt="Screenshot of ${p.title}" loading="lazy">
-      </div>
+      </div> `:""}
     </div>`;
 }
 
