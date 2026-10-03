@@ -3,7 +3,7 @@
 Personal portfolio website for **Mohammad Abbas**, a Java developer
 based in Kinna, Sweden. It presents my projects, skills and CV.
 
-**Live site:** https://whiteroadtojava.github.io/my-protofile/
+**Live site:** https://github.com/WhiteRoadToJava/my-portfolio.git
 
 ## Featured projects
 
